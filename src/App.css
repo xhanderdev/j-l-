@@ -1,0 +1,382 @@
+/* 00. General */
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  width: 100%;
+  margin: 0 auto;
+  /*font-family: cursive;*/
+  font-family: "Segoe IU", sans-serif;
+  font-style: oblique;
+  font-weight: 900;
+}
+/* ---Nav section ---*/
+.logo  {
+  display:flex;
+}
+
+.logo img {
+height: 100px;
+
+}
+/*  01. Estilo del Menu para Dispositivos Movil-Tablet   */
+.nav-movil {
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #808080;
+  
+}
+
+/* 02. Estilo del navbar */
+.navbar {
+  padding: 10px 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+nav{
+  z-index: 10001;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 1em;
+}
+
+nav ul li a{
+  color: #495E57;
+}
+
+nav ul li a:hover{
+  text-decoration: underline solid #495E57;
+  background: #F1C40F;
+  color: #2C3E50;
+  border-radius: 3px 15px;
+}
+/* 03. Estilo del menu-icono */
+.menu-icono {
+  display: none;
+  cursor: pointer;
+}
+
+/* 04. Estilo del nav-links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4%);
+}
+
+.nav-links.visible {
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  background-color: #495E57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* ---header section ---*/
+
+.header {
+  background-color: #2C3E50;;
+  padding: 40px 0;
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.6);
+
+}
+
+.header section {
+color: #EDEFEE;
+padding: 10px 13%;
+position: relative;
+border-radius: 3px 15px;
+}
+
+
+h1 {
+  color: #F4CE14;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.banner p {
+  font-size: 20px;
+  max-width: 520px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  
+}
+
+button {
+  background-color: #F4CE14;
+  color: #2C3E50;
+  padding: 14px 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 3px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banner-img{
+  position: absolute;
+  right: 8%;
+  top: 1%;
+  width: 500px;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 400px;
+  border-radius: 30px 150px;
+}
+form, .comfirm{
+  padding: 10px 13%;
+  
+}
+
+h2, .comfirm{
+  font-size: 60px;
+  
+}
+
+.formField{
+  padding: 50px 20px;
+}
+
+input, label{
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#book-date, #book-time, #book-guests, #book-occasion, #book-name, #book-tel{
+  background: #bdbdbd43;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 3px 15px;
+}
+
+.btnReceive input{
+  padding: 12px 16px;
+  margin-top: 20px;
+  background-color: #2C3E50;
+  color: #fff;
+  border: none;
+  border-radius: 3px 15px;
+  
+
+}
+
+.comfirm span{
+  color: blue;
+}
+
+
+/* menu items */
+
+.menu-container{
+  margin: 110px auto;
+  padding: 10px 13%;
+}
+
+.menu-container h2{
+  color: #000;
+}
+
+.menu-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.cards{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  
+}
+
+.menu-items{
+  /* height: 400px; */
+  width: 350px;
+  background: #a9c8be;
+  border-radius: 8px;
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4%);
+}
+
+.menu-container img{
+  width: 100%;
+  height: 233px;
+  border-radius: 8px;
+
+}
+
+.menu-content{
+  padding: 5px 15px;
+}
+
+
+.menu-content .heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderbtn{
+  padding: 5px 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Pie de página */
+
+
+
+footer section{
+  padding: 10px 13%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: #2C3E50;
+  color: #fff;
+  text-align: center;
+
+}
+
+.company-info img{
+  margin-top: 12px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.company-info p{
+  width: 320px;
+}
+
+
+footer h3{
+  font-size: 18px;
+}
+
+footer ul{
+  padding: 0;
+}
+
+footer ul li{
+  padding: 8px 0;
+}
+
+
+@media screen and (max-width: 700px){
+  .menu-icono {
+    display: block;
+  }
+
+  .nav-links {
+    border-radius: 30px 150px;
+    padding: 10px 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links.visible {
+    display: flex;
+    z-index: 1000;
+    padding: 10px 0;
+   }
+
+  .navbar{
+    background:#ffffff;
+    padding: 10px 10%;
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 10px 0px;
+  }
+
+  nav ul li a{
+    color: #fff;
+  }
+
+  .nav-movil{
+    background: #333333;
+  }
+  /* REVISAR a */
+  a {
+    font-size: 15px;
+  }
+
+  .banner-img{
+    display: none;
+  }
+
+  form, .comfirm{
+    padding: 10px 8%;
+  }
+
+  h2, .comfirm{
+    font-size: 15px;
+    
+  }
+
+
+  .header section, .menu-container{
+    padding: 10px 8%;
+  }
+  .menu-container{
+    margin: 20px 0;
+  }
+  .menu-header{
+    justify-content: flex-start;
+  }
+
+  .menu-items{
+    width: 100%;
+  }
+
+  footer section{
+    padding: 10px 8%;
+    flex-direction: column;
+  }
+  .company-info p{
+    width: 100%;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+
